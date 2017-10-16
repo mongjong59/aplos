@@ -7,7 +7,7 @@ ZSH_THEME_GIT_PROMPT_EQUAL_REMOTE=" =="
 ZSH_THEME_GIT_PROMPT_BEHIND_REMOTE=" <"
 ZSH_THEME_GIT_PROMPT_DIVERGED_REMOTE=" <>"
 
-prompt_dir="%{$fg_bold[yellow]%}%~"
+prompt_dir="%{$fg_bold[yellow]%}%2~"
 prompt_git() {
   if [ -d .git ]; then
     echo " $(parse_git_dirty)$(git_current_branch)$(git_remote_status)"
